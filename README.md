@@ -135,48 +135,6 @@ I work on SIP servers, RTP handling, charging flows, call monitoring, telecom da
 
 ---
 
-## GitHub Stats
-
-<p align="center">
-  <a href="https://github.com/darwvin-dev">
-    <img
-      height="180"
-      src="https://github-readme-stats.vercel.app/api?username=darwvin-dev&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github&cache_seconds=21600"
-      alt="darwvin-dev GitHub Stats"
-    />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/darwvin-dev">
-    <img
-      height="180"
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=darwvin-dev&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=21600"
-      alt="darwvin-dev Top Languages"
-    />
-  </a>
-</p>
-
-## GitHub Stats
-
-<p align="center">
-  <img
-    height="180"
-    src="https://YOUR-VERCEL-APP.vercel.app/api?username=darwvin-dev&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github&cache_seconds=21600"
-    alt="darwvin-dev GitHub Stats"
-  />
-</p>
-
-<p align="center">
-  <img
-    height="180"
-    src="https://YOUR-VERCEL-APP.vercel.app/api/top-langs/?username=darwvin-dev&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=21600"
-    alt="darwvin-dev Top Languages"
-  />
-</p>
-
----
-
 ## Connect with me
 
 <p align="left">
