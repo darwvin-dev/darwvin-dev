@@ -1,21 +1,81 @@
+<h1 align="center">Hi 👋, I'm darwvin</h1>
+
+<h3 align="center">Full Stack Developer | VoIP & Telecom Systems | Open Source Contributor</h3>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=darwvin-dev&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2500&pause=900&center=true&vCenter=true&width=900&lines=Building+scalable+backend+systems;Working+on+VoIP%2C+SIP+and+telecom+infrastructure;Contributing+to+open-source+projects;Full-stack+developer+with+a+DevOps+mindset" alt="Typing SVG" />
+</p>
+
+---
+
+## About me
+
+I'm a full-stack developer focused on building practical software, scalable backend systems, real-time platforms, and VoIP/telecom infrastructure.
+
+I work across backend, frontend, DevOps, Linux, and telecom systems. My main interests are SIP, RTP, high-concurrency services, distributed systems, performance engineering, and open-source contribution.
+
+* 🔭 Currently working on **VoIP monitoring, SIP infrastructure, backend platforms, and internal business tools**
+* 🌱 Learning deeper **system design, Linux, security, and performance engineering**
+* 🧪 Interested in **SIPp, OpenSIPS, RTPengine, Kafka, high concurrency, and telecom testing**
+* 💬 Ask me about **React, Node.js, PHP, Laravel, Go, Docker, SIP, OpenSIPS, and VoIP systems**
+* 📫 Reach me at **[darwvindev@gmail.com](mailto:darwvindev@gmail.com)**
+
+---
+
+## Open Source Contribution
+
+<p align="left">
+  <a href="https://github.com/SIPp/sipp">
+    <img src="https://img.shields.io/badge/SIPp-Contributor-1f6feb?style=for-the-badge&logo=github&logoColor=white" alt="SIPp Contributor" />
+  </a>
+  <img src="https://img.shields.io/badge/Open%20Source-Contributor-2ea44f?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="Open Source Contributor" />
+  <img src="https://img.shields.io/badge/VoIP-Testing-orange?style=for-the-badge" alt="VoIP Testing" />
+</p>
+
+I contribute to **SIPp**, a widely used open-source SIP traffic generator for testing VoIP systems.
+
+My contribution focus includes:
+
+* Improving the SIPp startup wizard experience
+* Refining generated command previews
+* Testing builds with and without optional PCAP support
+* Working with CMake and CTest verification
+* Improving usability around SIP traffic generation workflows
+
+---
+
+## Latest Contributions
+
+<!-- CONTRIBUTIONS:START -->
+
+This section can be updated automatically with GitHub Actions.
+
+<!-- CONTRIBUTIONS:END -->
+
+---
+
 ## Tech Stack
 
 ### Backend
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,php,laravel,go,java,spring,python&theme=dark" alt="Backend skills" />
+  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,php,laravel,go,java,spring,python&theme=dark&perline=9" alt="Backend skills" />
 </p>
 
 ### Frontend
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,tailwind,bootstrap,redux,html,css&theme=dark" alt="Frontend skills" />
+  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,tailwind,bootstrap,redux,html,css&theme=dark&perline=9" alt="Frontend skills" />
 </p>
 
 ### Databases, Messaging & Realtime
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,kafka,rabbitmq&theme=dark" alt="Database and messaging skills" />
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,kafka,rabbitmq&theme=dark&perline=8" alt="Database and messaging skills" />
 </p>
 
 <p align="left">
@@ -27,7 +87,7 @@
 ### DevOps, Linux & Tools
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=linux,arch,docker,nginx,git,github,bash,vscode,postman&theme=dark" alt="DevOps and tools" />
+  <img src="https://skillicons.dev/icons?i=linux,arch,docker,nginx,git,github,bash,vscode,postman&theme=dark&perline=9" alt="DevOps and tools" />
 </p>
 
 ---
@@ -48,13 +108,62 @@ I work on SIP servers, RTP handling, charging flows, call monitoring, telecom da
 
 ---
 
+## Featured Focus
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3>Backend & Distributed Systems</h3>
+      <p>Building APIs, microservices, queues, retries, background workers, and production-ready backend systems.</p>
+    </td>
+    <td width="50%">
+      <h3>VoIP & SIP Infrastructure</h3>
+      <p>Working with SIP servers, RTP, Diameter/charging flows, SIPp testing, OpenSIPS, and call monitoring systems.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>Full-Stack Products</h3>
+      <p>Developing complete products with frontend, backend, database, deployment, and monitoring.</p>
+    </td>
+    <td width="50%">
+      <h3>Linux & DevOps</h3>
+      <p>Using Linux, Docker, Nginx, Git, CI/CD, and system-level tools to deploy and maintain services.</p>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## GitHub Stats
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=darwvin-dev&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=darwvin-dev&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=darwvin-dev&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" alt="GitHub Stats" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=darwvin-dev&layout=compact&theme=transparent&hide_border=true&langs_count=8" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=darwvin-dev&theme=tokyo-night&hide_border=true&area=true" alt="GitHub Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=darwvin-dev&theme=github-compact&hide_border=true&area=true" alt="GitHub Activity Graph" />
+</p>
+
+---
+
+## Connect with me
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/mohammad-bagher-amini-a75a88388/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://instagram.com/darwvin" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-darwvin-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  <a href="mailto:darwvindev@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-darwvindev%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <b>Building practical software, scalable systems, and reliable telecom tools.</b>
 </p>
