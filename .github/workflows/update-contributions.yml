@@ -1,105 +1,98 @@
 name: Update profile contributions
 
 on:
-schedule:
-- cron: '0 */12 * * *'
 workflow_dispatch:
-push:
-branches:
-- main
+schedule:
+- cron: "0 */12 * * *"
 
 permissions:
 contents: write
 
 jobs:
 update-contributions:
-name: Update README
 runs-on: ubuntu-latest
 
 ```
 steps:
   - name: Checkout repository
     uses: actions/checkout@v4
-    with:
-      persist-credentials: true
 
-  - name: Update README contributions section
-    uses: actions/github-script@v7
-    with:
-      github-token: ${{ secrets.GITHUB_TOKEN }}
-      script: |
-        const fs = require('fs');
-
-        const username = 'darwvin-dev';
-        const readmePath = 'README.md';
-
-        async function searchPRs(query, limit) {
-          const result = await github.rest.search.issuesAndPullRequests({
-            q: query,
-            per_page: limit,
-            sort: 'updated',
-            order: 'desc'
-          });
-
-          return result.data.items;
-        }
-
-        function formatPR(item) {
-          const status = item.state === 'open' ? 'open' : 'closed/merged';
-          return `- [${item.title}](${item.html_url}) — \`${status}\``;
-        }
-
-        const sippPRs = await searchPRs(
-          `repo:SIPp/sipp is:pr author:${username}`,
-          5
-        );
-
-        const openSourcePRs = await searchPRs(
-          `is:pr author:${username} -user:${username}`,
-          5
-        );
-
-        const sippSection = sippPRs.length
-          ? sippPRs.map(formatPR).join('\n')
-          : '- No public SIPp PRs found yet.';
-
-        const openSourceSection = openSourcePRs.length
-          ? openSourcePRs.map(formatPR).join('\n')
-          : '- No public open-source PRs found yet.';
-
-        const generated = [
-          '### SIPp Contributions',
-          '',
-          sippSection,
-          '',
-          '### Recent Open Source PRs',
-          '',
-          openSourceSection,
-          '',
-          '<sub>Last updated automatically by GitHub Actions.</sub>'
-        ].join('\n');
-
-        const start = '<!-- CONTRIBUTIONS:START -->';
-        const end = '<!-- CONTRIBUTIONS:END -->';
-
-        const readme = fs.readFileSync(readmePath, 'utf8');
-        const pattern = new RegExp(`${start}[\\s\\S]*?${end}`);
-
-        if (!pattern.test(readme)) {
-          core.setFailed('README.md does not contain CONTRIBUTIONS markers.');
-          return;
-        }
-
-        const updated = readme.replace(
-          pattern,
-          `${start}\n${generated}\n${end}`
-        );
-
-        fs.writeFileSync(readmePath, updated);
-
-  - name: Commit and push README changes
+  - name: Generate contributions section
+    env:
+      GH_TOKEN: ${{ github.token }}
+      USERNAME: darwvin-dev
     run: |
-      if [[ -n "$(git status --porcelain)" ]]; then
+      set -e
+
+      START="<!-- CONTRIBUTIONS:START -->"
+      END="<!-- CONTRIBUTIONS:END -->"
+
+      if ! grep -q "$START" README.md; then
+        echo "README.md does not contain CONTRIBUTIONS:START marker"
+        exit 1
+      fi
+
+      if ! grep -q "$END" README.md; then
+        echo "README.md does not contain CONTRIBUTIONS:END marker"
+        exit 1
+      fi
+
+      echo "### SIPp Contributions" > contributions.md
+      echo "" >> contributions.md
+
+      gh search prs \
+        --repo SIPp/sipp \
+        --author "$USERNAME" \
+        --limit 5 \
+        --json title,url,state \
+        --template '{{range .}}- [{{.title}}]({{.url}}) — `{{.state}}`{{"\n"}}{{end}}' \
+        >> contributions.md || true
+
+      if [ ! -s contributions.md ] || [ "$(wc -l < contributions.md)" -le 2 ]; then
+        echo "- No public SIPp PRs found yet." >> contributions.md
+      fi
+
+      echo "" >> contributions.md
+      echo "### Recent Open Source PRs" >> contributions.md
+      echo "" >> contributions.md
+
+      gh search prs \
+        --author "$USERNAME" \
+        --limit 5 \
+        --json title,url,state,repository \
+        --template '{{range .}}- [{{.title}}]({{.url}}) — `{{.state}}`{{"\n"}}{{end}}' \
+        >> contributions.md || true
+
+      echo "" >> contributions.md
+      echo "<sub>Last updated automatically by GitHub Actions.</sub>" >> contributions.md
+
+      awk -v start="$START" -v end="$END" '
+        BEGIN {
+          while ((getline line < "contributions.md") > 0) {
+            block = block line "\n"
+          }
+        }
+        $0 == start {
+          print
+          printf "%s", block
+          skip = 1
+          next
+        }
+        $0 == end {
+          skip = 0
+          print
+          next
+        }
+        !skip {
+          print
+        }
+      ' README.md > README.tmp
+
+      mv README.tmp README.md
+
+  - name: Commit changes
+    run: |
+      if [ -n "$(git status --porcelain)" ]; then
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add README.md
