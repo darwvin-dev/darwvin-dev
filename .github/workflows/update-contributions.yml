@@ -1,0 +1,109 @@
+name: Update profile contributions
+
+on:
+schedule:
+- cron: "0 */12 * * *"
+workflow_dispatch:
+
+permissions:
+contents: write
+
+jobs:
+update-contributions:
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: Checkout profile repository
+    uses: actions/checkout@v4
+
+  - name: Update README contributions section
+    uses: actions/github-script@v7
+    with:
+      script: |
+        const fs = require("fs");
+
+        const username = "darwvin-dev";
+        const readmePath = "README.md";
+
+        async function searchPRs(query, limit = 5) {
+          const result = await github.rest.search.issuesAndPullRequests({
+            q: query,
+            per_page: limit,
+            sort: "updated",
+            order: "desc",
+          });
+
+          return result.data.items;
+        }
+
+        function formatPR(item) {
+          const state =
+            item.state === "closed"
+              ? "merged/closed"
+              : item.state;
+
+          return `- [${item.title}](${item.html_url}) — \`${state}\``;
+        }
+
+        const sippPRs = await searchPRs(
+          `repo:SIPp/sipp is:pr author:${username} sort:updated-desc`,
+          5
+        );
+
+        const openSourcePRs = await searchPRs(
+          `is:pr author:${username} -user:${username} sort:updated-desc`,
+          5
+        );
+
+        const sippSection =
+          sippPRs.length > 0
+            ? sippPRs.map(formatPR).join("\n")
+            : "- No public SIPp PRs found yet.";
+
+        const openSourceSection =
+          openSourcePRs.length > 0
+            ? openSourcePRs.map(formatPR).join("\n")
+            : "- No public open-source PRs found yet.";
+
+        const generated = `## SIPp Contributions
+```
+
+${sippSection}
+
+## Recent Open Source PRs
+
+${openSourceSection}
+
+<sub>Last updated automatically by GitHub Actions.</sub>`;
+
+```
+        const start = "<!-- CONTRIBUTIONS:START -->";
+        const end = "<!-- CONTRIBUTIONS:END -->";
+
+        const readme = fs.readFileSync(readmePath, "utf8");
+
+        const updated = readme.replace(
+          new RegExp(`${start}[\\s\\S]*?${end}`),
+          `${start}\n${generated}\n${end}`
+        );
+
+        if (updated !== readme) {
+          fs.writeFileSync(readmePath, updated);
+          console.log("README.md updated.");
+        } else {
+          console.log("No changes needed.");
+        }
+
+  - name: Commit and push changes
+    run: |
+      if [[ -n "$(git status --porcelain)" ]]; then
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add README.md
+        git commit -m "Update profile contributions"
+        git push
+      else
+        echo "No changes to commit."
+      fi
+```
