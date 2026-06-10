@@ -53,18 +53,11 @@ My contribution focus includes:
 <!-- CONTRIBUTIONS:START -->
 ### SIPp Contributions
 
-- [Fix/pr 868 startup wizard comments](https://github.com/SIPp/sipp/pull/871) — `closed`
-- [feat: add configurable Call-ID generators](https://github.com/SIPp/sipp/pull/869) — `merged`
-- [feat: add interactive startup wizard](https://github.com/SIPp/sipp/pull/868) — `open`
-- [feat: add startup wizard and configurable Call-ID generators](https://github.com/SIPp/sipp/pull/867) — `closed`
+- No public SIPp PRs found yet.
 
 ### Recent Open Source PRs
 
-- [fix: simplify startup wizard command quoting](https://github.com/darwvin-dev/sipp/pull/1) — `merged`
-- [Fix/pr 868 startup wizard comments](https://github.com/SIPp/sipp/pull/871) — `closed`
-- [DataSourcePicker: mark filtered current source invalid](https://github.com/grafana/grafana/pull/125387) — `open`
-- [feat(promql): add option to preserve parser comments](https://github.com/prometheus/prometheus/pull/18781) — `open`
-- [fix(account): respect kc_locale parameter](https://github.com/keycloak/keycloak/pull/49278) — `open`
+- No public open-source PRs found yet.
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
