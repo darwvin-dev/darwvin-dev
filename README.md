@@ -54,18 +54,19 @@ I contribute to open-source projects where I can improve backend behavior, devel
 <!-- CONTRIBUTIONS:START -->
 ### SIPp Contributions
 
+- [Add multi-instance launcher](https://github.com/SIPp/sipp/pull/873) — `open`
+- [[codex] add multi-instance launcher](https://github.com/SIPp/sipp/pull/872) — `closed`
 - [Fix/pr 868 startup wizard comments](https://github.com/SIPp/sipp/pull/871) — `closed`
 - [feat: add configurable Call-ID generators](https://github.com/SIPp/sipp/pull/869) — `merged`
 - [feat: add interactive startup wizard](https://github.com/SIPp/sipp/pull/868) — `open`
-- [feat: add startup wizard and configurable Call-ID generators](https://github.com/SIPp/sipp/pull/867) — `closed`
 
 ### Recent Open Source PRs
 
+- [Add multi-instance launcher](https://github.com/SIPp/sipp/pull/873) — `open`
+- [Add multi-instance launcher](https://github.com/darwvin-dev/sipp/pull/3) — `merged`
+- [Add multi-instance launcher](https://github.com/darwvin-dev/sipp/pull/2) — `closed`
+- [[codex] add multi-instance launcher](https://github.com/SIPp/sipp/pull/872) — `closed`
 - [Render relation fields as labels with a selector (#3)](https://github.com/darwvin-dev/gomyadmin/pull/12) — `merged`
-- [Wire up live Cloudflare demo + real CRM screenshots](https://github.com/darwvin-dev/gomyadmin/pull/11) — `merged`
-- [fix: simplify startup wizard command quoting](https://github.com/darwvin-dev/sipp/pull/1) — `merged`
-- [Fix/pr 868 startup wizard comments](https://github.com/SIPp/sipp/pull/871) — `closed`
-- [DataSourcePicker: mark filtered current source invalid](https://github.com/grafana/grafana/pull/125387) — `open`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
