@@ -61,11 +61,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
+- [Render relation fields as labels with a selector (#3)](https://github.com/darwvin-dev/gomyadmin/pull/12) — `merged`
 - [Wire up live Cloudflare demo + real CRM screenshots](https://github.com/darwvin-dev/gomyadmin/pull/11) — `merged`
 - [fix: simplify startup wizard command quoting](https://github.com/darwvin-dev/sipp/pull/1) — `merged`
 - [Fix/pr 868 startup wizard comments](https://github.com/SIPp/sipp/pull/871) — `closed`
 - [DataSourcePicker: mark filtered current source invalid](https://github.com/grafana/grafana/pull/125387) — `open`
-- [feat(promql): add option to preserve parser comments](https://github.com/prometheus/prometheus/pull/18781) — `open`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
