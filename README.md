@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
+- [Split heavy optional adapters into opt-in modules (#5)](https://github.com/darwvin-dev/gomyadmin/pull/13) — `merged`
 - [Add multi-instance launcher](https://github.com/SIPp/sipp/pull/873) — `open`
 - [Add multi-instance launcher](https://github.com/darwvin-dev/sipp/pull/3) — `merged`
 - [Add multi-instance launcher](https://github.com/darwvin-dev/sipp/pull/2) — `closed`
 - [[codex] add multi-instance launcher](https://github.com/SIPp/sipp/pull/872) — `closed`
-- [Render relation fields as labels with a selector (#3)](https://github.com/darwvin-dev/gomyadmin/pull/12) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
