@@ -62,7 +62,7 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
-- [[codex] finish mvp handoff](https://github.com/darwvin-dev/RemoteOpsX/pull/1) — `open`
+- [[codex] finish mvp handoff](https://github.com/darwvin-dev/RemoteOpsX/pull/1) — `merged`
 - [Split heavy optional adapters into opt-in modules (#5)](https://github.com/darwvin-dev/gomyadmin/pull/13) — `merged`
 - [Add multi-instance launcher](https://github.com/SIPp/sipp/pull/873) — `open`
 - [Add multi-instance launcher](https://github.com/darwvin-dev/sipp/pull/3) — `merged`
