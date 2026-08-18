@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
+- [build: establish reproducible release foundation](https://github.com/darwvin-dev/RemoteOpsX/pull/23) — `open`
+- [Add actionable SSH connection diagnostics](https://github.com/darwvin-dev/RemoteOpsX/pull/22) — `merged`
+- [Add actionable SSH connection diagnostics](https://github.com/darwvin-dev/RemoteOpsX/pull/6) — `closed`
+- [Establish production-readiness security and release baseline](https://github.com/darwvin-dev/RemoteOpsX/pull/5) — `merged`
 - [Add native macOS setup, CI, and DMG releases](https://github.com/darwvin-dev/RemoteOpsX/pull/4) — `merged`
-- [Add automated Linux and macOS setup and releases](https://github.com/darwvin-dev/RemoteOpsX/pull/3) — `merged`
-- [Harden RemoteOpsX and automate Linux dependency setup](https://github.com/darwvin-dev/RemoteOpsX/pull/2) — `merged`
-- [[codex] finish mvp handoff](https://github.com/darwvin-dev/RemoteOpsX/pull/1) — `merged`
-- [Split heavy optional adapters into opt-in modules (#5)](https://github.com/darwvin-dev/gomyadmin/pull/13) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
