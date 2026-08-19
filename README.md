@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
-- [feat: add runbook studio dashboard and universal palette](https://github.com/darwvin-dev/RemoteOpsX/pull/30) — `open`
+- [feat: add runbook studio dashboard and universal palette](https://github.com/darwvin-dev/RemoteOpsX/pull/31) — `open`
+- [feat: add runbook studio dashboard and universal palette](https://github.com/darwvin-dev/RemoteOpsX/pull/30) — `closed`
 - [feat: add operator data plane workflows](https://github.com/darwvin-dev/RemoteOpsX/pull/29) — `open`
-- [feat: add verified bastion routing and live ssh tests](https://github.com/darwvin-dev/RemoteOpsX/pull/28) — `open`
+- [feat: add verified bastion routing and live ssh tests](https://github.com/darwvin-dev/RemoteOpsX/pull/28) — `merged`
 - [feat: add terminal appearance and density controls](https://github.com/darwvin-dev/RemoteOpsX/pull/27) — `merged`
-- [feat: add theme and font presets](https://github.com/darwvin-dev/RemoteOpsX/pull/26) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
