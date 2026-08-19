@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
-- [build: establish reproducible release foundation](https://github.com/darwvin-dev/RemoteOpsX/pull/23) — `open`
-- [Add actionable SSH connection diagnostics](https://github.com/darwvin-dev/RemoteOpsX/pull/22) — `merged`
-- [Add actionable SSH connection diagnostics](https://github.com/darwvin-dev/RemoteOpsX/pull/6) — `closed`
-- [Establish production-readiness security and release baseline](https://github.com/darwvin-dev/RemoteOpsX/pull/5) — `merged`
-- [Add native macOS setup, CI, and DMG releases](https://github.com/darwvin-dev/RemoteOpsX/pull/4) — `merged`
+- [feat: add runbook studio dashboard and universal palette](https://github.com/darwvin-dev/RemoteOpsX/pull/30) — `open`
+- [feat: add operator data plane workflows](https://github.com/darwvin-dev/RemoteOpsX/pull/29) — `open`
+- [feat: add verified bastion routing and live ssh tests](https://github.com/darwvin-dev/RemoteOpsX/pull/28) — `open`
+- [feat: add terminal appearance and density controls](https://github.com/darwvin-dev/RemoteOpsX/pull/27) — `merged`
+- [feat: add theme and font presets](https://github.com/darwvin-dev/RemoteOpsX/pull/26) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
