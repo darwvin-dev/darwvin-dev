@@ -58,7 +58,7 @@ I contribute to open-source projects where I can improve backend behavior, devel
 - [[codex] add multi-instance launcher](https://github.com/SIPp/sipp/pull/872) — `closed`
 - [Fix/pr 868 startup wizard comments](https://github.com/SIPp/sipp/pull/871) — `closed`
 - [feat: add configurable Call-ID generators](https://github.com/SIPp/sipp/pull/869) — `merged`
-- [feat: add interactive startup wizard](https://github.com/SIPp/sipp/pull/868) — `open`
+- [feat: add interactive startup wizard](https://github.com/SIPp/sipp/pull/868) — `merged`
 
 ### Recent Open Source PRs
 
