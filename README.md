@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
+- [fix: accept sips: URIs when extracting caller info](https://github.com/VoiSmart/pjsip-android/pull/241) — `open`
 - [test: add packaged Tauri desktop end-to-end gate](https://github.com/darwvin-dev/RemoteOpsX/pull/32) — `open`
 - [feat: add runbook studio dashboard and universal palette](https://github.com/darwvin-dev/RemoteOpsX/pull/31) — `open`
 - [feat: add runbook studio dashboard and universal palette](https://github.com/darwvin-dev/RemoteOpsX/pull/30) — `closed`
 - [feat: add operator data plane workflows](https://github.com/darwvin-dev/RemoteOpsX/pull/29) — `merged`
-- [feat: add verified bastion routing and live ssh tests](https://github.com/darwvin-dev/RemoteOpsX/pull/28) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
