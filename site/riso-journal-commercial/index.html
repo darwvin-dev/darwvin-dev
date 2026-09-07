@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Riso Journal Commercial Privacy Policy</title>
+  <style>
+    :root { font-family: Georgia, serif; line-height: 1.6; }
+    body { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1, h2 { line-height: 1.2; }
+    code { font-family: ui-monospace, monospace; }
+    .meta { opacity: .72; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Riso Journal Commercial Privacy Policy</h1>
+    <p class="meta">Developer: darwvin-dev · Last updated: 2026-09-07</p>
+
+    <p>This policy covers the paid/commercial Riso Journal build that uses Google Play Billing for the optional one-time <code>full_unlock</code> product.</p>
+
+    <h2>Local content</h2>
+    <p>Riso Journal stores the selected palette and wallpaper composition, three task strings and completion state, one short note, setup state, and a local Riso Full entitlement flag in app-local storage.</p>
+    <p>Riso does not upload task text, note text, wallpaper choices, or launcher guidance data to a developer-operated server.</p>
+
+    <h2>Google Play Billing</h2>
+    <p>The commercial build uses Google Play Billing for the one-time Riso Full purchase. Google Play handles payment credentials. Riso Journal does not request or receive the user's raw payment-card number.</p>
+    <p>The Billing Library can provide purchase-related information needed to operate the entitlement, including product ID, purchase state, purchase token or purchase-record metadata, and acknowledgement state.</p>
+    <p>The current commercial V1 uses this purchase information on-device. It does not transmit purchase tokens to a developer-operated purchase-verification backend.</p>
+    <p>Google Play independently processes purchase and payment information under Google's own terms and privacy policies.</p>
+
+    <h2>Other services and permissions</h2>
+    <p>The current commercial build has no Riso account, advertising SDK, remote analytics SDK, remote crash-reporting SDK, developer cloud backend, location permission, contacts permission, microphone permission, photo/media permission, SMS permission, call-log permission, or broad package-query permission.</p>
+
+    <h2>Launcher visibility</h2>
+    <p>The app declares narrow visibility for the current Android HOME launcher so it can display launcher-specific setup guidance. It does not request <code>QUERY_ALL_PACKAGES</code>.</p>
+
+    <h2>Wallpaper files</h2>
+    <p>When the user asks to apply a wallpaper, Riso Journal creates a temporary PNG in app cache and grants Android's wallpaper UI temporary read access through a private FileProvider path. Older generated Riso wallpaper cache files are removed when a new preview is prepared.</p>
+
+    <h2>Backups and device transfer</h2>
+    <p>Android app backup is disabled. Explicit backup rules exclude Riso app files, databases, and shared preferences from cloud backup and device-to-device transfer.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Local Riso data remains until the user changes it, uses Reset Riso Settings, clears Android app storage, or uninstalls the app. A wallpaper already applied by Android remains the system wallpaper until the user changes it.</p>
+    <p>Riso has no account system and therefore no remote Riso account record to delete.</p>
+
+    <h2>Purchase verification scope</h2>
+    <p>The first low-value offline commercial release intentionally uses client-side Play ownership/state checks rather than a developer purchase-verification backend. This is a weaker anti-tampering model than secure server verification and is accepted specifically for the offline V1 scope.</p>
+    <p>If a future release adds a purchase-verification backend, accounts, cloud sync, remote premium content, analytics, ads, or other data handling, this policy will be updated before that build is distributed.</p>
+
+    <h2>Contact</h2>
+    <p>Developer: <a href="https://github.com/darwvin-dev">darwvin-dev</a>.</p>
+    <p>Privacy inquiries can be submitted through the public <a href="https://github.com/darwvin-dev/darwvin-dev/issues/1">Riso Journal privacy inquiry thread</a>. Do not post passwords, payment credentials, private documents, device identifiers, or other sensitive personal information in a public GitHub issue.</p>
+  </main>
+</body>
+</html>
