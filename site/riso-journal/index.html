@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Riso Journal Privacy Policy</title>
+  <style>
+    :root { font-family: Georgia, serif; line-height: 1.6; }
+    body { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1, h2 { line-height: 1.2; }
+    code { font-family: ui-monospace, monospace; }
+    .meta { opacity: .72; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Riso Journal Privacy Policy</h1>
+    <p class="meta">Developer: darwvin-dev · Last updated: 2026-09-07</p>
+
+    <p>Riso Journal is an offline-first Android home-screen customization app.</p>
+
+    <h2>Data collection and sharing</h2>
+    <p>The release build does not request Internet access, create an account, use advertising, use remote analytics, or use remote crash reporting. It does not transmit the user's tasks, note, theme choices, launcher name, or usage data to a server.</p>
+
+    <h2>Data stored on the device</h2>
+    <p>Riso Journal stores the selected palette and wallpaper composition, three task strings and completion state, one short note, and setup state in app-local storage.</p>
+
+    <p>Release builds do not record the local tester metrics used by debuggable development builds.</p>
+
+    <h2>Backups and device transfer</h2>
+    <p>Android app backup is disabled. Explicit Android backup rules also exclude app files, databases, and shared preferences from cloud backup and device-to-device transfer.</p>
+
+    <h2>Launcher visibility</h2>
+    <p>The app declares narrow visibility for the current Android HOME launcher only so it can display launcher-specific setup guidance. It does not request broad <code>QUERY_ALL_PACKAGES</code> access.</p>
+
+    <h2>Wallpaper files</h2>
+    <p>When the user asks to apply a wallpaper, Riso Journal generates a temporary PNG in the app cache and grants Android's wallpaper UI temporary read access to that cached wallpaper file through a private FileProvider path.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Local theme content remains until the user changes it, uses Reset Riso Settings, clears the app's storage, or uninstalls the app. Temporary wallpaper files live in app cache and may be removed by Android or when app storage is cleared.</p>
+
+    <p>Resetting Riso settings does not remove a wallpaper that Android has already applied as the system wallpaper.</p>
+
+    <h2>Accounts</h2>
+    <p>The current release has no account system and therefore no remote account data to delete.</p>
+
+    <h2>Future changes</h2>
+    <p>If a future version adds remote analytics, crash reporting, advertising, cloud services, billing-related telemetry, or another network service, this privacy policy and the Google Play Data safety declaration must be reviewed and updated before that version is released.</p>
+
+    <h2>Contact</h2>
+    <p>Developer: <a href="https://github.com/darwvin-dev">darwvin-dev</a>.</p>
+    <p>Privacy inquiries can be submitted through the public <a href="https://github.com/darwvin-dev/darwvin-dev/issues/1">Riso Journal privacy inquiry thread</a>. Do not post passwords, credentials, device identifiers, private documents, or other sensitive personal information in a public GitHub issue.</p>
+  </main>
+</body>
+</html>
