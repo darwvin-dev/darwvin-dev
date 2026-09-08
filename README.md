@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
+- [Fix Riso Journal privacy Pages deployment](https://github.com/darwvin-dev/darwvin-dev/pull/2) — `merged`
 - [Privacy: disclose optional biometric App Lock](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/1) — `merged`
 - [fix: accept sips: URIs when extracting caller info](https://github.com/VoiSmart/pjsip-android/pull/241) — `open`
 - [test: add packaged Tauri desktop end-to-end gate](https://github.com/darwvin-dev/RemoteOpsX/pull/32) — `open`
 - [feat: add runbook studio dashboard and universal palette](https://github.com/darwvin-dev/RemoteOpsX/pull/31) — `open`
-- [feat: add runbook studio dashboard and universal palette](https://github.com/darwvin-dev/RemoteOpsX/pull/30) — `closed`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
