@@ -16,7 +16,7 @@
 <body>
   <main>
     <h1>Riso Journal Privacy Policy</h1>
-    <p class="meta">Developer: darwvin-dev · Last updated: 2026-09-07</p>
+    <p class="meta">Developer: darwvin-dev · Last updated: 2026-09-08</p>
 
     <p>Riso Journal is an offline-first Android home-screen customization app.</p>
 
@@ -32,10 +32,10 @@
     <p>Android app backup is disabled. Explicit Android backup rules also exclude app files, databases, and shared preferences from cloud backup and device-to-device transfer.</p>
 
     <h2>Launcher visibility</h2>
-    <p>The app declares narrow visibility for the current Android HOME launcher only so it can display launcher-specific setup guidance. It does not request broad <code>QUERY_ALL_PACKAGES</code> access.</p>
+    <p>The app queries the current Android HOME launcher and a limited explicit allowlist of supported launcher/OEM helper packages only so it can choose the correct wallpaper, widget, and icon-pack setup route. It does not request broad <code>QUERY_ALL_PACKAGES</code> access and does not enumerate unrelated installed apps.</p>
 
     <h2>Wallpaper files</h2>
-    <p>When the user asks to apply a wallpaper, Riso Journal generates a temporary PNG in the app cache and grants Android's wallpaper UI temporary read access to that cached wallpaper file through a private FileProvider path.</p>
+    <p>Quick Setup can render the selected wallpaper locally and apply it directly through Android's <code>WallpaperManager</code>. The manual Preview &amp; Apply path can generate a temporary PNG in app cache and grant Android's wallpaper UI temporary read access only to that cached file through a private FileProvider path.</p>
 
     <h2>Retention and deletion</h2>
     <p>Local theme content remains until the user changes it, uses Reset Riso Settings, clears the app's storage, or uninstalls the app. Temporary wallpaper files live in app cache and may be removed by Android or when app storage is cleared.</p>
