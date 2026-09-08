@@ -1,6 +1,6 @@
 # Riso Journal — Privacy Policy
 
-Last updated: September 7, 2026
+Last updated: September 8, 2026
 
 Riso Journal (`dev.darwvin.risojournal`) is an offline-first Android home-screen personalization app developed by **darwvin-dev**.
 
@@ -8,11 +8,11 @@ Riso Journal (`dev.darwvin.risojournal`) is an offline-first Android home-screen
 
 The current release build does not request Internet access, create an account, use advertising, use remote analytics, or use remote crash reporting.
 
-Riso Journal does not transmit the user's tasks, note, theme choices, launcher name, or usage data to the developer or third parties through the app runtime.
+Riso Journal does not transmit the user's tasks, note, theme choices, launcher name, icon setup route, or usage data to the developer or third parties through the app runtime.
 
 ## Data stored on the device
 
-Riso Journal stores the following locally on the device for app functionality:
+Riso Journal stores locally:
 
 - selected palette
 - selected wallpaper composition
@@ -25,25 +25,39 @@ Debug/test builds may keep local setup-friction counters. Release builds do not 
 
 ## Permissions and device access
 
-The current release does not request location, contacts, microphone, camera, photos/media, SMS, call log, or broad package-query access.
+Riso Journal does not request location, contacts, microphone, camera, photos/media, SMS, call log, or broad package-query access.
 
-The app declares narrow visibility for the current Android HOME launcher only so it can display launcher-specific setup guidance. It does not request `QUERY_ALL_PACKAGES`.
+It uses the normal Android `SET_WALLPAPER` permission only when the user explicitly asks Riso to apply the selected home wallpaper.
+
+The app does not request `QUERY_ALL_PACKAGES`. It can identify the current Android HOME launcher and declares a small explicit allowlist of known launcher/OEM packages only so it can select the correct widget/icon setup route.
+
+## Wallpaper behavior
+
+Riso Journal provides two user-triggered wallpaper paths.
+
+**Quick Setup:** the selected wallpaper is rendered locally on the device and passed directly to Android's `WallpaperManager` for the home screen.
+
+**Preview & Apply:** the selected wallpaper is rendered to a temporary PNG in app cache. Android's wallpaper UI receives temporary read access only to that cached file through a private FileProvider grant.
+
+Riso Journal does not upload generated wallpapers or user content.
+
+## Widgets and icon-pack setup
+
+Riso Journal can ask Android/compatible launchers to pin its own widgets and can open supported launcher or OEM customization routes for its bundled icon pack.
+
+This routing does not grant Riso access to messages, contacts, files, browsing data, accounts, or other private app content.
+
+Some launchers do not expose arbitrary third-party icon-pack application. In those cases Riso shows setup guidance rather than claiming the icons were applied.
 
 ## Backups and device transfer
 
-Android app backup is disabled.
-
-Explicit Android backup rules also exclude Riso Journal app files, databases, and shared preferences from cloud backup and device-to-device transfer.
-
-## Wallpaper files
-
-When the user asks to apply a wallpaper, Riso Journal generates a temporary PNG in app cache and gives Android's wallpaper UI temporary read access to that cached wallpaper through a private FileProvider path.
+Android app backup is disabled. Explicit backup rules exclude Riso Journal app files, databases, and shared preferences from cloud backup and device-to-device transfer.
 
 ## Retention and deletion
 
 Local Riso Journal data remains until the user changes it, uses **Reset Riso Settings**, clears Android app storage, or uninstalls the app.
 
-Temporary wallpaper files live in app cache and may be removed by Android or when app storage is cleared.
+Temporary preview wallpaper files live in app cache and may be removed by Android or when app storage is cleared.
 
 Resetting Riso Journal settings does not remove a wallpaper that Android has already applied as the system wallpaper.
 
