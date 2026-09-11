@@ -1,27 +1,29 @@
 # Riso Journal — Privacy Policy
 
-Last updated: September 8, 2026
+Last updated: September 11, 2026
 
-Riso Journal (`dev.darwvin.risojournal`) is an offline-first Android home-screen personalization app developed by **darwvin-dev**.
+Riso Journal (`dev.darwvin.risojournal`) is an offline-first Android home-screen personalization and local daily-journal app developed by **darwvin-dev**.
 
 ## Data collection and sharing
 
-The current release build does not request Internet access, create an account, use advertising, use remote analytics, or use remote crash reporting.
+The current 0.4.0 release candidate does not request Internet access, create an account, use advertising, use remote analytics, or use remote crash reporting.
 
-Riso Journal does not transmit the user's tasks, note, theme choices, launcher name, icon setup route, or usage data to the developer or third parties through the app runtime.
+Riso Journal does not automatically transmit the user's journal pages, tasks, completion state, note text, focus state, theme choices, launcher name, icon setup route, installed-app coverage information, or usage data to the developer or third parties through the app runtime.
 
 ## Data stored on the device
 
-Riso Journal stores locally:
+Riso Journal stores locally in app-private storage:
 
-- selected palette
-- selected wallpaper composition
-- three task strings
-- task completion state
-- one short note
-- setup state
+- selected palette and wallpaper composition
+- up to three task strings per journal day
+- task completion state per journal day
+- one short note per journal day
+- focus-session end time
+- setup and launcher/icon-flow state
 
-Debug/test builds may keep local setup-friction counters. Release builds do not record those tester metrics.
+Journal History can access locally stored dated entries, and individual journal days can be edited or deleted by the user.
+
+Debug/test builds may keep local setup-friction counters. Non-debuggable release builds do not record those tester metrics.
 
 ## Permissions and device access
 
@@ -29,7 +31,9 @@ Riso Journal does not request location, contacts, microphone, camera, photos/med
 
 It uses the normal Android `SET_WALLPAPER` permission only when the user explicitly asks Riso to apply the selected home wallpaper.
 
-The app does not request `QUERY_ALL_PACKAGES`. It can identify the current Android HOME launcher and declares a small explicit allowlist of known launcher/OEM packages only so it can select the correct widget/icon setup route.
+The app does not request `QUERY_ALL_PACKAGES`. Icon Browser uses a narrow `MAIN` + `LAUNCHER` query to read launchable app labels, package names and launcher activity names locally so it can show whether an installed app has a curated Riso mapping. Riso also declares a limited set of launcher/OEM packages only for setup routing.
+
+That installed-app information stays on the device unless the user explicitly chooses **Share icon request**, which opens Android's normal share sheet with the selected app label/package/activity.
 
 ## Wallpaper behavior
 
@@ -45,9 +49,17 @@ Riso Journal does not upload generated wallpapers or user content.
 
 Riso Journal can ask Android/compatible launchers to pin its own widgets and can open supported launcher or OEM customization routes for its bundled icon pack.
 
+Some launchers expose a direct icon-pack request; others require launcher settings, Samsung Theme Park, or another OEM path. Riso does not report icon success merely because it opened another app or settings screen.
+
+Stock launchers that do not expose a public arbitrary third-party icon-pack API remain Limited. For users who explicitly choose the full icon-pack experience, Riso may open an already-installed compatible launcher or open its public Google Play listing using an Android `ACTION_VIEW` intent. Riso itself still has no Internet permission and does not download the launcher.
+
 This routing does not grant Riso access to messages, contacts, files, browsing data, accounts, or other private app content.
 
-Some launchers do not expose arbitrary third-party icon-pack application. In those cases Riso shows setup guidance rather than claiming the icons were applied.
+## Journal-page sharing
+
+When the user explicitly chooses **Share page**, Riso renders the selected journal page to a temporary PNG in app cache and sends that file to Android's share sheet through a temporary FileProvider read grant.
+
+Riso does not transmit the image itself. The user chooses the receiving app and destination.
 
 ## Backups and device transfer
 
@@ -55,21 +67,28 @@ Android app backup is disabled. Explicit backup rules exclude Riso Journal app f
 
 ## Retention and deletion
 
-Local Riso Journal data remains until the user changes it, uses **Reset Riso Settings**, clears Android app storage, or uninstalls the app.
+Journal pages and other local app data remain on the device until the user changes or deletes them, clears Android app storage, or uninstalls Riso Journal.
 
-Temporary preview wallpaper files live in app cache and may be removed by Android or when app storage is cleared.
+- Individual journal days can be deleted from Journal History.
+- **Reset Riso Settings** resets appearance/setup state but deliberately preserves journal pages.
+- Clearing Android app storage or uninstalling the app removes app-local journal content.
+- Temporary journal-share and wallpaper-preview files live in app cache and may be removed by Android or when app storage is cleared.
 
-Resetting Riso Journal settings does not remove a wallpaper that Android has already applied as the system wallpaper.
+Resetting Riso settings does not remove a wallpaper that Android has already applied as the system wallpaper.
 
 ## Accounts
 
 Riso Journal currently has no account system and therefore no remote account data to delete.
 
-## Google Play
+## Google Play and external apps
 
-Google Play may independently process information when users install, purchase, or interact with apps through Google Play. Google's processing is controlled by Google and subject to Google's own terms and privacy policies.
+Google Play, Galaxy Store, launcher apps, OEM customization tools, and apps selected from Android's share sheet may independently process information when the user interacts with them. Their processing is controlled by those services/apps and is subject to their own terms and privacy policies.
 
-If a future Riso Journal release adds Play Billing, remote analytics, crash reporting, ads, cloud services, authentication, or another network service, this policy and the Google Play Data safety declaration will be reviewed before that version is released.
+Riso Journal does not receive purchase history or launcher-store account information from those external apps in the current paid-upfront model.
+
+## Future changes
+
+If a future Riso Journal release adds Play Billing inside the app, remote analytics, crash reporting, ads, cloud services, authentication, remote configuration, attribution, or another network service, this policy and the Google Play Data safety declaration will be reviewed before that version is released.
 
 ## Privacy inquiries
 
