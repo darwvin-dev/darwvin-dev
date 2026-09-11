@@ -16,37 +16,57 @@
 <body>
   <main>
     <h1>Riso Journal Privacy Policy</h1>
-    <p class="meta">Developer: darwvin-dev · Last updated: 2026-09-08</p>
+    <p class="meta">Developer: darwvin-dev · Last updated: 2026-09-11</p>
 
-    <p>Riso Journal is an offline-first Android home-screen customization app.</p>
+    <p>Riso Journal (<code>dev.darwvin.risojournal</code>) is an offline-first Android home-screen personalization and local daily-journal app.</p>
 
     <h2>Data collection and sharing</h2>
-    <p>The release build does not request Internet access, create an account, use advertising, use remote analytics, or use remote crash reporting. It does not transmit the user's tasks, note, theme choices, launcher name, or usage data to a server.</p>
+    <p>The current 0.4.0 release candidate does not request Internet access, create an account, use advertising, use remote analytics, or use remote crash reporting. It does not automatically transmit journal pages, tasks, completion state, note text, focus state, theme choices, launcher information, icon setup information, installed-app coverage information, or usage data to a server.</p>
 
     <h2>Data stored on the device</h2>
-    <p>Riso Journal stores the selected palette and wallpaper composition, three task strings and completion state, one short note, and setup state in app-local storage.</p>
+    <p>Riso Journal stores selected palette and wallpaper composition, up to three task strings and their completion state per journal day, one short note per journal day, focus-session end time, and setup/icon-flow state in app-private local storage.</p>
+    <p>Journal History can access dated local entries. Individual journal days can be edited or deleted. Release builds do not record the local setup-friction metrics used by debuggable development builds.</p>
 
-    <p>Release builds do not record the local tester metrics used by debuggable development builds.</p>
+    <h2>Permissions and installed-app visibility</h2>
+    <p>Riso Journal does not request location, contacts, microphone, camera, photos/media, SMS, call log, or broad <code>QUERY_ALL_PACKAGES</code> access.</p>
+    <p>The normal Android <code>SET_WALLPAPER</code> permission is used only when the user explicitly asks Riso to apply a wallpaper.</p>
+    <p>Icon Browser uses a narrow <code>MAIN</code> + <code>LAUNCHER</code> query to read launchable app labels, package names and launcher activities locally so it can show Riso icon coverage. Riso also declares a limited set of launcher/OEM packages for setup routing. This information is not uploaded automatically.</p>
+    <p>If the user explicitly chooses <strong>Share icon request</strong>, Android's share sheet opens with the selected app label/package/activity and the user chooses the receiving app.</p>
+
+    <h2>Wallpaper files</h2>
+    <p>Quick Setup can render the selected wallpaper locally and apply it through Android's <code>WallpaperManager</code>. The manual Preview &amp; Apply path can generate a temporary PNG in app cache and grant Android's wallpaper UI temporary read access to that cached file through a private FileProvider path.</p>
+    <p>Riso Journal does not upload generated wallpapers or journal content.</p>
+
+    <h2>Widgets and icon-pack setup</h2>
+    <p>Riso Journal can ask Android/compatible launchers to pin its own widgets and can open supported launcher or OEM customization routes for its bundled icon pack.</p>
+    <p>Some launchers expose a direct icon-pack request; others require launcher settings, Samsung Theme Park, or another OEM path. Riso does not report icon success merely because another app or settings screen opened.</p>
+    <p>Stock launchers that do not expose a public arbitrary third-party icon-pack API remain Limited. If the user explicitly wants the full icon-pack experience, Riso may open an already-installed compatible launcher or its public Google Play listing using an Android <code>ACTION_VIEW</code> intent. Riso itself still has no Internet permission and does not download the launcher.</p>
+
+    <h2>Journal-page sharing</h2>
+    <p>When the user explicitly chooses <strong>Share page</strong>, Riso renders that journal page to a temporary PNG in app cache and passes it to Android's share sheet through a temporary FileProvider read grant. Riso does not transmit the image itself; the user selects the destination.</p>
 
     <h2>Backups and device transfer</h2>
     <p>Android app backup is disabled. Explicit Android backup rules also exclude app files, databases, and shared preferences from cloud backup and device-to-device transfer.</p>
 
-    <h2>Launcher visibility</h2>
-    <p>The app queries the current Android HOME launcher and a limited explicit allowlist of supported launcher/OEM helper packages only so it can choose the correct wallpaper, widget, and icon-pack setup route. It does not request broad <code>QUERY_ALL_PACKAGES</code> access and does not enumerate unrelated installed apps.</p>
-
-    <h2>Wallpaper files</h2>
-    <p>Quick Setup can render the selected wallpaper locally and apply it directly through Android's <code>WallpaperManager</code>. The manual Preview &amp; Apply path can generate a temporary PNG in app cache and grant Android's wallpaper UI temporary read access only to that cached file through a private FileProvider path.</p>
-
     <h2>Retention and deletion</h2>
-    <p>Local theme content remains until the user changes it, uses Reset Riso Settings, clears the app's storage, or uninstalls the app. Temporary wallpaper files live in app cache and may be removed by Android or when app storage is cleared.</p>
-
+    <p>Journal pages and other local app data remain until the user changes or deletes them, clears Android app storage, or uninstalls Riso Journal.</p>
+    <ul>
+      <li>Individual journal days can be deleted from Journal History.</li>
+      <li><strong>Reset Riso Settings</strong> resets appearance/setup state but deliberately preserves journal pages.</li>
+      <li>Clearing app storage or uninstalling removes app-local journal content.</li>
+      <li>Temporary wallpaper-preview and journal-share files live in app cache and may be removed by Android or when app storage is cleared.</li>
+    </ul>
     <p>Resetting Riso settings does not remove a wallpaper that Android has already applied as the system wallpaper.</p>
 
     <h2>Accounts</h2>
     <p>The current release has no account system and therefore no remote account data to delete.</p>
 
+    <h2>Google Play and external apps</h2>
+    <p>Google Play, Galaxy Store, launcher apps, OEM customization tools and apps selected from Android's share sheet may independently process information when the user interacts with them. Their processing is controlled by those apps/services and their own terms and privacy policies.</p>
+    <p>Riso Journal does not receive purchase history or launcher-store account information in the current paid-upfront model.</p>
+
     <h2>Future changes</h2>
-    <p>If a future version adds remote analytics, crash reporting, advertising, cloud services, billing-related telemetry, or another network service, this privacy policy and the Google Play Data safety declaration must be reviewed and updated before that version is released.</p>
+    <p>If a future version adds in-app Play Billing, remote analytics, crash reporting, advertising, cloud services, authentication, remote configuration, attribution, or another network service, this privacy policy and the Google Play Data safety declaration will be reviewed before that version is released.</p>
 
     <h2>Contact</h2>
     <p>Developer: <a href="https://github.com/darwvin-dev">darwvin-dev</a>.</p>
