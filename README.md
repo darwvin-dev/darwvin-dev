@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
+- [fix: overhaul SSH terminal UX and import OpenSSH aliases](https://github.com/darwvin-dev/RemoteOpsX/pull/34) — `open`
+- [fix: close production readiness gaps](https://github.com/darwvin-dev/RemoteOpsX/pull/33) — `merged`
 - [docs: sync FCM token retention behavior](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/5) — `merged`
 - [docs: clarify enrollment confirmation and installation-ID retention](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/4) — `merged`
 - [ci: temporary Android hosted-runner validation probe (closed)](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/3) — `closed`
-- [docs: disclose Darwvin Softphone enterprise enrollment](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/2) — `merged`
-- [Fix Riso Journal privacy Pages deployment](https://github.com/darwvin-dev/darwvin-dev/pull/2) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
