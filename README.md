@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
-- [test: cover packaged destructive operation guards](https://github.com/darwvin-dev/RemoteOpsX/pull/41) — `open`
-- [feat: overhaul workspace and terminal UX](https://github.com/darwvin-dev/RemoteOpsX/pull/40) — `merged`
-- [docs: prepare first signed alpha release](https://github.com/darwvin-dev/RemoteOpsX/pull/38) — `merged`
-- [security: harden paid release boundaries](https://github.com/darwvin-dev/RemoteOpsX/pull/37) — `merged`
-- [feat: add production commercial control plane](https://github.com/darwvin-dev/RemoteOpsX/pull/36) — `merged`
+- [docs: sync FCM token retention behavior](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/5) — `merged`
+- [docs: clarify enrollment confirmation and installation-ID retention](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/4) — `merged`
+- [ci: temporary Android hosted-runner validation probe (closed)](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/3) — `closed`
+- [docs: disclose Darwvin Softphone enterprise enrollment](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/2) — `merged`
+- [Fix Riso Journal privacy Pages deployment](https://github.com/darwvin-dev/darwvin-dev/pull/2) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
