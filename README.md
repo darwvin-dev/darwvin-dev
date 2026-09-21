@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
+- [test: cover packaged destructive operation guards](https://github.com/darwvin-dev/RemoteOpsX/pull/41) — `open`
+- [feat: overhaul workspace and terminal UX](https://github.com/darwvin-dev/RemoteOpsX/pull/40) — `merged`
 - [docs: prepare first signed alpha release](https://github.com/darwvin-dev/RemoteOpsX/pull/38) — `merged`
 - [security: harden paid release boundaries](https://github.com/darwvin-dev/RemoteOpsX/pull/37) — `merged`
 - [feat: add production commercial control plane](https://github.com/darwvin-dev/RemoteOpsX/pull/36) — `merged`
-- [feat: add commercial product foundation and onboarding](https://github.com/darwvin-dev/RemoteOpsX/pull/35) — `merged`
-- [fix: overhaul SSH terminal UX and import OpenSSH aliases](https://github.com/darwvin-dev/RemoteOpsX/pull/34) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
