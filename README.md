@@ -54,7 +54,7 @@ I contribute to open-source projects where I can improve backend behavior, devel
 <!-- CONTRIBUTIONS:START -->
 ### SIPp Contributions
 
-- [Add multi-instance launcher](https://github.com/SIPp/sipp/pull/873) — `open`
+- [Add multi-instance launcher](https://github.com/SIPp/sipp/pull/873) — `merged`
 - [[codex] add multi-instance launcher](https://github.com/SIPp/sipp/pull/872) — `closed`
 - [Fix/pr 868 startup wizard comments](https://github.com/SIPp/sipp/pull/871) — `closed`
 - [feat: add configurable Call-ID generators](https://github.com/SIPp/sipp/pull/869) — `merged`
