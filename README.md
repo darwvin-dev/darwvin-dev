@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
+- [[uac_registrant] Add registration statistics](https://github.com/OpenSIPS/opensips/pull/4278) — `open`
+- [[rtp_relay] Keep context alive for in-dialog callback](https://github.com/OpenSIPS/opensips/pull/4276) — `open`
+- [[json] Parse boolean values as integers](https://github.com/OpenSIPS/opensips/pull/4275) — `open`
 - [docs: sync FCM token retention behavior](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/5) — `merged`
 - [docs: clarify enrollment confirmation and installation-ID retention](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/4) — `merged`
-- [ci: temporary Android hosted-runner validation probe (closed)](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/3) — `closed`
-- [docs: disclose Darwvin Softphone enterprise enrollment](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/2) — `merged`
-- [Fix Riso Journal privacy Pages deployment](https://github.com/darwvin-dev/darwvin-dev/pull/2) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
