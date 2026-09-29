@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
+- [[rest_client] Optionally follow HTTP redirects](https://github.com/OpenSIPS/opensips/pull/4284) — `open`
+- [[tls_mgm] Export active TLS connection statistics](https://github.com/OpenSIPS/opensips/pull/4283) — `open`
 - [[uac_registrant] Add registration statistics](https://github.com/OpenSIPS/opensips/pull/4278) — `open`
-- [[rtp_relay] Keep context alive for in-dialog callback](https://github.com/OpenSIPS/opensips/pull/4276) — `open`
+- [[rtp_relay] Keep context alive for in-dialog callback](https://github.com/OpenSIPS/opensips/pull/4276) — `closed`
 - [[json] Parse boolean values as integers](https://github.com/OpenSIPS/opensips/pull/4275) — `open`
-- [docs: sync FCM token retention behavior](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/5) — `merged`
-- [docs: clarify enrollment confirmation and installation-ID retention](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/4) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
