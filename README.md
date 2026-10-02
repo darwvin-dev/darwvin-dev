@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
-- [filter: add SIP transport filter](https://github.com/irontec/sngrep/pull/576) — `open`
-- [filter: add X-Call-ID to filter dialog](https://github.com/irontec/sngrep/pull/575) — `open`
-- [sip: support non-standard request methods](https://github.com/irontec/sngrep/pull/574) — `open`
-- [filter: invalidate cached result on new messages](https://github.com/irontec/sngrep/pull/573) — `open`
-- [capture: guard IPv6 fragment reassembly state](https://github.com/irontec/sngrep/pull/572) — `open`
+- [tools: add DTLS-SRTP handshake, fingerprint validation and key export](https://github.com/darwvin-dev/sipp/pull/10) — `open`
+- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/darwvin-dev/sipp/pull/9) — `open`
+- [tools: add RTCP/SRTCP QoS analysis and MOS estimation](https://github.com/darwvin-dev/sipp/pull/8) — `open`
+- [tools: add deterministic RTP/RTCP media impairment proxy](https://github.com/darwvin-dev/sipp/pull/7) — `open`
+- [tools: add CI-native threshold reports and machine-readable results](https://github.com/darwvin-dev/sipp/pull/6) — `open`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
