@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
-- [Allow selecting filter dialog fields with the mouse](https://github.com/irontec/sngrep/pull/571) — `open`
-- [Add Call State filtering](https://github.com/irontec/sngrep/pull/570) — `open`
-- [Fix unlabeled field in filter dialog](https://github.com/irontec/sngrep/pull/569) — `open`
-- [filter: reuse PCRE2 match data](https://github.com/irontec/sngrep/pull/568) — `merged`
-- [filter: add Call-ID to filter dialog](https://github.com/irontec/sngrep/pull/567) — `merged`
+- [filter: add SIP transport filter](https://github.com/irontec/sngrep/pull/576) — `open`
+- [filter: add X-Call-ID to filter dialog](https://github.com/irontec/sngrep/pull/575) — `open`
+- [sip: support non-standard request methods](https://github.com/irontec/sngrep/pull/574) — `open`
+- [filter: invalidate cached result on new messages](https://github.com/irontec/sngrep/pull/573) — `open`
+- [capture: guard IPv6 fragment reassembly state](https://github.com/irontec/sngrep/pull/572) — `open`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
