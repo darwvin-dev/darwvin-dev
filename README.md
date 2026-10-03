@@ -54,19 +54,19 @@ I contribute to open-source projects where I can improve backend behavior, devel
 <!-- CONTRIBUTIONS:START -->
 ### SIPp Contributions
 
-- [Add multi-instance launcher](https://github.com/SIPp/sipp/pull/873) — `merged`
-- [[codex] add multi-instance launcher](https://github.com/SIPp/sipp/pull/872) — `closed`
-- [Fix/pr 868 startup wizard comments](https://github.com/SIPp/sipp/pull/871) — `closed`
-- [feat: add configurable Call-ID generators](https://github.com/SIPp/sipp/pull/869) — `merged`
-- [feat: add interactive startup wizard](https://github.com/SIPp/sipp/pull/868) — `merged`
+- [tools: add DTLS-SRTP handshake, fingerprint validation and key export](https://github.com/SIPp/sipp/pull/1281) — `open`
+- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/SIPp/sipp/pull/1280) — `open`
+- [tools: add RTCP/SRTCP QoS analysis and MOS estimation](https://github.com/SIPp/sipp/pull/1279) — `open`
+- [tools: add deterministic RTP/RTCP media impairment proxy](https://github.com/SIPp/sipp/pull/1278) — `open`
+- [tools: add CI-native threshold reports and machine-readable results](https://github.com/SIPp/sipp/pull/1277) — `open`
 
 ### Recent Open Source PRs
 
-- [tools: add DTLS-SRTP handshake, fingerprint validation and key export](https://github.com/darwvin-dev/sipp/pull/10) — `open`
-- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/darwvin-dev/sipp/pull/9) — `open`
-- [tools: add RTCP/SRTCP QoS analysis and MOS estimation](https://github.com/darwvin-dev/sipp/pull/8) — `open`
-- [tools: add deterministic RTP/RTCP media impairment proxy](https://github.com/darwvin-dev/sipp/pull/7) — `open`
-- [tools: add CI-native threshold reports and machine-readable results](https://github.com/darwvin-dev/sipp/pull/6) — `open`
+- [sync master into X-Call-ID filter branch](https://github.com/darwvin-dev/sngrep/pull/1) — `merged`
+- [sync master into tls statistics branch](https://github.com/darwvin-dev/opensips/pull/2) — `merged`
+- [sync master into json boolean branch](https://github.com/darwvin-dev/opensips/pull/1) — `merged`
+- [tools: add DTLS-SRTP handshake, fingerprint validation and key export](https://github.com/SIPp/sipp/pull/1281) — `open`
+- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/SIPp/sipp/pull/1280) — `open`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
