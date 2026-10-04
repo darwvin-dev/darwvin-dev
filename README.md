@@ -58,7 +58,7 @@ I contribute to open-source projects where I can improve backend behavior, devel
 - [tools: add ICE connectivity, STUN and TURN probes](https://github.com/SIPp/sipp/pull/1280) — `open`
 - [tools: add RTCP/SRTCP QoS analysis and MOS estimation](https://github.com/SIPp/sipp/pull/1279) — `open`
 - [tools: add deterministic RTP/RTCP media impairment proxy](https://github.com/SIPp/sipp/pull/1278) — `open`
-- [tools: add CI-native threshold reports and machine-readable results](https://github.com/SIPp/sipp/pull/1277) — `open`
+- [tools: add CI-native threshold reports and machine-readable results](https://github.com/SIPp/sipp/pull/1277) — `merged`
 
 ### Recent Open Source PRs
 
