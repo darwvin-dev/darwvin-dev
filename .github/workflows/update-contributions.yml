@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   update-contributions:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, darwvin]
 
     steps:
       - name: Checkout repository
