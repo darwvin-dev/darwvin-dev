@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
-- [sync master into X-Call-ID filter branch](https://github.com/darwvin-dev/sngrep/pull/1) — `merged`
-- [sync master into tls statistics branch](https://github.com/darwvin-dev/opensips/pull/2) — `merged`
-- [sync master into json boolean branch](https://github.com/darwvin-dev/opensips/pull/1) — `merged`
-- [tools: add DTLS-SRTP diagnostic handshake probe](https://github.com/SIPp/sipp/pull/1281) — `merged`
-- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/SIPp/sipp/pull/1280) — `merged`
+- [[config_tx] Add staged atomic config commit and rollback](https://github.com/darwvin-dev/opensips/pull/7) — `open`
+- [[grpc_client] Add native async generic unary gRPC client](https://github.com/darwvin-dev/opensips/pull/6) — `open`
+- [[media_qoe] Add RTPengine QoE thresholds, events and metrics](https://github.com/darwvin-dev/opensips/pull/5) — `open`
+- [[secrets] Add env, file and Vault-backed secret providers](https://github.com/darwvin-dev/opensips/pull/4) — `open`
+- [[drain] Add graceful traffic draining for rolling upgrades](https://github.com/darwvin-dev/opensips/pull/3) — `open`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
