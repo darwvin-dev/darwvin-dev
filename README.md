@@ -55,9 +55,9 @@ I contribute to open-source projects where I can improve backend behavior, devel
 ### SIPp Contributions
 
 - [tools: add DTLS-SRTP diagnostic handshake probe](https://github.com/SIPp/sipp/pull/1281) — `merged`
-- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/SIPp/sipp/pull/1280) — `open`
-- [tools: add RTCP/SRTCP QoS analysis and MOS estimation](https://github.com/SIPp/sipp/pull/1279) — `open`
-- [tools: add RTP/RTCP media impairment proxy](https://github.com/SIPp/sipp/pull/1278) — `open`
+- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/SIPp/sipp/pull/1280) — `merged`
+- [tools: add RTCP/SRTCP QoS analysis and MOS estimation](https://github.com/SIPp/sipp/pull/1279) — `merged`
+- [tools: add RTP/RTCP media impairment proxy](https://github.com/SIPp/sipp/pull/1278) — `merged`
 - [tools: add CI-native threshold reports and machine-readable results](https://github.com/SIPp/sipp/pull/1277) — `merged`
 
 ### Recent Open Source PRs
@@ -66,7 +66,7 @@ I contribute to open-source projects where I can improve backend behavior, devel
 - [sync master into tls statistics branch](https://github.com/darwvin-dev/opensips/pull/2) — `merged`
 - [sync master into json boolean branch](https://github.com/darwvin-dev/opensips/pull/1) — `merged`
 - [tools: add DTLS-SRTP diagnostic handshake probe](https://github.com/SIPp/sipp/pull/1281) — `merged`
-- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/SIPp/sipp/pull/1280) — `open`
+- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/SIPp/sipp/pull/1280) — `merged`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
