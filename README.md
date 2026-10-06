@@ -62,11 +62,11 @@ I contribute to open-source projects where I can improve backend behavior, devel
 
 ### Recent Open Source PRs
 
-- [[config_tx] Add staged atomic config commit and rollback](https://github.com/darwvin-dev/opensips/pull/7) — `open`
-- [[grpc_client] Add native async generic unary gRPC client](https://github.com/darwvin-dev/opensips/pull/6) — `open`
-- [[media_qoe] Add RTPengine QoE thresholds, events and metrics](https://github.com/darwvin-dev/opensips/pull/5) — `open`
-- [[secrets] Add env, file and Vault-backed secret providers](https://github.com/darwvin-dev/opensips/pull/4) — `open`
-- [[drain] Add graceful traffic draining for rolling upgrades](https://github.com/darwvin-dev/opensips/pull/3) — `open`
+- [[tls_mgm] Add TLS handshake outcome and latency observability](https://github.com/darwvin-dev/opensips/pull/15) — `open`
+- [[opentelemetry] Correlate SIP transactions and dialogs across messages](https://github.com/darwvin-dev/opensips/pull/14) — `open`
+- [[sip_overload] Add RFC 7339/7415 SIP overload control](https://github.com/darwvin-dev/opensips/pull/13) — `open`
+- [[observability] Add OpenTelemetry OTLP metrics exporter](https://github.com/darwvin-dev/opensips/pull/12) — `open`
+- [[tools] Add web UI, control API and live observability gateway](https://github.com/darwvin-dev/opensips/pull/11) — `open`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
