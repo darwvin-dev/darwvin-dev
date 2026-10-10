@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Mohammad Bagher Amini — Darwvin</title>
+  <desc id="desc">Backend and distributed systems engineering, SIP and VoIP, production reliability. Dark architectural banner with connected network nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1221"/>
+      <stop offset=".6" stop-color="#101D30"/>
+      <stop offset="1" stop-color="#132A36"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#46DCC6"/>
+      <stop offset="1" stop-color="#68A9FF"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#65CFEA" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#65CFEA" stop-opacity=".12"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#94B2C8" stroke-width=".6" opacity=".095"/>
+    </pattern>
+    <clipPath id="round"><rect width="1200" height="300" rx="17"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="1200" height="300" fill="url(#bg)"/>
+    <rect width="1200" height="300" fill="url(#grid)"/>
+    <path d="M0 0H1200" stroke="url(#accent)" stroke-width="5"/>
+    <circle cx="1067" cy="112" r="240" fill="#36CECF" opacity=".055"/>
+    <circle cx="1120" cy="250" r="170" fill="#579BFF" opacity=".07"/>
+    <path d="M760 0L1200 0V300H840Z" fill="#071526" opacity=".34"/>
+    <g fill="none" stroke="url(#line)" stroke-width="1.6">
+      <path d="M806 200L915 105L1025 143L1126 69"/>
+      <path d="M812 91L915 105L994 223L1119 196"/>
+      <path d="M915 105L1120 196L1126 69"/>
+      <path d="M806 200L994 223L1025 143"/>
+      <path d="M1119 196L1195 252"/>
+      <path d="M1025 143L1196 126"/>
+    </g>
+    <g stroke="#80E4DB" stroke-width="2">
+      <circle cx="806" cy="200" r="5" fill="#102D38"/>
+      <circle cx="915" cy="105" r="7" fill="#123D44"/>
+      <circle cx="1025" cy="143" r="6" fill="#123D44"/>
+      <circle cx="1126" cy="69" r="5" fill="#102D38"/>
+      <circle cx="994" cy="223" r="5" fill="#102D38"/>
+      <circle cx="1119" cy="196" r="7" fill="#123D44"/>
+    </g>
+    <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">
+      <rect x="882" y="73" width="73" height="25" rx="6" fill="#143543" stroke="#3A7581"/>
+      <text x="899" y="90" fill="#79DACE">SIP</text>
+      <rect x="989" y="157" width="79" height="25" rx="6" fill="#173443" stroke="#3D687D"/>
+      <text x="1007" y="174" fill="#8FC6F7">RTP</text>
+      <rect x="1044" y="210" width="101" height="25" rx="6" fill="#173443" stroke="#3D687D"/>
+      <text x="1060" y="227" fill="#8FC6F7">EVENTS</text>
+    </g>
+    <g font-family="Segoe UI, Inter, Arial, sans-serif">
+      <rect x="64" y="35" width="35" height="35" rx="8" fill="#183847" stroke="#397A82"/>
+      <path d="M74 45H81C91 45 91 60 81 60H74Z" fill="none" stroke="#60E0D0" stroke-width="3" stroke-linejoin="round"/>
+      <text x="113" y="58" fill="#89A5BB" font-size="13" font-weight="700" letter-spacing="3">DARWVIN  /  ENGINEERING</text>
+      <text x="64" y="130" fill="#F0F6FF" font-size="49" font-weight="750" letter-spacing="-1.6">MOHAMMAD BAGHER AMINI</text>
+      <rect x="64" y="152" width="55" height="4" rx="2" fill="url(#accent)"/>
+      <text x="64" y="194" fill="#C5D6E7" font-size="21" font-weight="500">Backend &amp; Distributed Systems Engineer</text>
+      <text x="64" y="229" fill="#75DCCD" font-size="15" font-weight="600" letter-spacing=".5">GO  ·  NODE.JS  ·  SIP / VoIP  ·  REAL-TIME INFRASTRUCTURE</text>
+      <text x="64" y="270" fill="#829AAF" font-size="13" letter-spacing=".5">Building reliable systems. Contributing upstream. Shipping practical software.</text>
+    </g>
+  </g>
+</svg>
