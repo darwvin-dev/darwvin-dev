@@ -1,55 +1,94 @@
-<h1 align="center">Darwvin</h1>
+<div align="center">
 
-<h3 align="center">Backend / VoIP / Distributed Systems Engineer</h3>
+<img src="./assets/hero.svg" width="100%" alt="Mohammad Bagher Amini (Darwvin) — Backend and Distributed Systems Engineer" />
 
-<p align="center">
-  Building telecom infrastructure, queue systems, and production backend tools.
-</p>
+<br/>
 
-<p align="center">
-  <a href="https://github.com/darwvin-dev">
-    <img src="https://komarev.com/ghpvc/?username=darwvin-dev&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
-  </a>
-  <a href="https://www.linkedin.com/in/mohammad-bagher-amini-a75a88388/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:darwvin@hotmail.com">
-    <img src="https://img.shields.io/badge/Email-darwvin%40hotmail.com-D14836?style=flat&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
+<a href="https://www.linkedin.com/in/mohammad-bagher-amini-aa258b423/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn profile" /></a>
+<a href="mailto:darwvin@hotmail.com"><img src="https://img.shields.io/badge/Email-Let's%20talk-334155?style=flat-square&logo=maildotru&logoColor=white" alt="Email" /></a>
+<a href="https://github.com/darwvin-dev?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Explore%20my%20work-202B3B?style=flat-square&logo=github&logoColor=white" alt="GitHub repositories" /></a>
+<img src="https://komarev.com/ghpvc/?username=darwvin-dev&label=Profile%20views&color=178A87&style=flat-square" alt="GitHub profile view counter" />
 
----
+</div>
 
-## About
+# Hi, I'm Mohammad Bagher Amini 👋
 
-I build practical backend systems, VoIP/telecom infrastructure, real-time platforms, and internal tools that need to run reliably in production.
+**Senior Backend & Distributed Systems Engineer** specializing in **Go, Node.js, high-concurrency services, and real-time communications (SIP/VoIP).**
 
-My strongest areas are SIP/VoIP systems, high-concurrency services, queue and worker architectures, Linux operations, and full-stack product delivery when the backend needs to be tightly connected to the user workflow.
+I build systems where reliability is part of the design: from SIP signaling and RTP-aware infrastructure to event-driven backends, observability, automation, and developer tools. I enjoy working close to protocols, performance bottlenecks, and production operations — then turning that complexity into software people can actually use.
 
-Currently focused on:
+**My engineering focus**
 
-- VoIP monitoring, SIP infrastructure, and telecom testing workflows
-- Queue systems, retries, background workers, and storage abstraction design
-- Production backend platforms with clear deployment and operational paths
-- Open-source contributions in telecom, observability, identity, and developer tooling
+- **Distributed backends:** Go, Node.js, asynchronous processing, Kafka, Redis, PostgreSQL, queues, retries, and concurrency.
+- **Real-time telecom:** SIP, SDP, RTP/RTCP, media relays, NAT traversal, registration, routing, and load testing.
+- **Production engineering:** Linux, containers, CI/CD, diagnostics, observability, profiling, and failure recovery.
+- **Product development:** Cross-platform desktop apps, developer-facing APIs, and practical operational interfaces.
 
----
+## Open source · Work that shipped upstream
 
-## Open Source
+I care about contributions that can be reviewed, tested, and used by the wider engineering community.
 
-I contribute to open-source projects where I can improve backend behavior, developer experience, protocol tooling, or system reliability.
+**[SIPp](https://github.com/SIPp/sipp)** — merged contributions to SIP traffic testing and media diagnostics:
 
-### Notable work
+| Area | Merged upstream contribution |
+| :-- | :-- |
+| Media quality | [RTCP/SRTCP QoS analysis and MOS estimation](https://github.com/SIPp/sipp/pull/1279) |
+| NAT & WebRTC | [ICE connectivity, STUN and TURN diagnostic probes](https://github.com/SIPp/sipp/pull/1280) |
+| Media security | [DTLS-SRTP handshake diagnostic probe](https://github.com/SIPp/sipp/pull/1281) |
+| Network simulation | [RTP/RTCP media impairment proxy](https://github.com/SIPp/sipp/pull/1278) |
+| CI & automation | [Threshold reports and machine-readable results](https://github.com/SIPp/sipp/pull/1277) |
+| SIP protocol tooling | [Configurable Call-ID generators](https://github.com/SIPp/sipp/pull/869) |
 
-- [SIPp](https://github.com/SIPp/sipp): configurable Call-ID generation, startup workflow improvements, and SIP traffic generation usability.
-- [Keycloak](https://github.com/keycloak/keycloak): account console locale handling via `kc_locale`.
-- [Grafana](https://github.com/grafana/grafana): DataSourcePicker correctness around filtered current data sources.
-- [Prometheus](https://github.com/prometheus/prometheus): proposal and implementation work for preserving PromQL parser comments.
-- [Asynq](https://github.com/hibiken/asynq): exploring a lightweight pluggable backend/storage abstraction while keeping core dependencies small.
+**[sngrep](https://github.com/irontec/sngrep)** — [Call State filtering](https://github.com/irontec/sngrep/pull/570), merged upstream.
 
----
+**[OpenSIPS](https://github.com/OpenSIPS/opensips)** — ongoing upstream proposals in [SIP call tracing with OpenTelemetry](https://github.com/OpenSIPS/opensips/pull/4308), [SIP overload control](https://github.com/OpenSIPS/opensips/pull/4307), and [ICE/DTLS-SRTP policy enforcement](https://github.com/OpenSIPS/opensips/pull/4305). *These are proposals, not presented as merged features.*
 
-## Latest Contributions
+> **What I optimize for:** reproducible tests, clear failure modes, operational visibility, and maintainable implementations.
+
+## What I'm building
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<h3>📡 DarwPhone</h3>
+<p>A SIP softphone project spanning native call-engine integration and cross-platform user experiences.</p>
+<sub>In development · Real-time communications</sub>
+</td>
+<td width="33%" valign="top">
+<h3>🖥️ RemoteOpsX</h3>
+<p>Remote operations tooling focused on secure access, server workflows, and practical diagnostics.</p>
+<sub>In development · Developer / IT operations</sub>
+</td>
+<td width="33%" valign="top">
+<h3>📊 PBX Nexus</h3>
+<p>A desktop workspace for connecting to existing PBX servers, inspecting health, and simplifying telecom operations.</p>
+<sub>In development · VoIP infrastructure</sub>
+</td>
+</tr>
+</table>
+
+*These are active product projects; the corresponding codebases are not presented here as publicly released products.*
+
+## The technology behind the work
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=go,nodejs,ts,python,rust,postgres,redis,docker,linux,react&theme=dark&perline=10" alt="Go, Node.js, TypeScript, Python, Rust, PostgreSQL, Redis, Docker, Linux, and React" />
+
+</div>
+
+| Engineering | Technologies & practices |
+| :-- | :-- |
+| **Backend & architecture** | Go, Node.js, TypeScript, REST APIs, services, workers, event-driven design |
+| **Data & messaging** | PostgreSQL, Redis, Kafka, SQL and data pipelines |
+| **Telecom & media** | SIP, SDP, RTP/RTCP, RTPengine, Asterisk, FreeSWITCH, OpenSIPS, SIPp |
+| **Infrastructure** | Linux, Docker, Nginx, CI/CD, observability, performance testing |
+| **UI & product delivery** | React, cross-platform desktop tooling, APIs, operator-focused UX |
+
+## Recent open-source activity
+
+<details>
+<summary><b>Browse my latest pull requests (automatically updated)</b></summary>
 
 <!-- CONTRIBUTIONS:START -->
 ### SIPp Contributions
@@ -71,86 +110,18 @@ I contribute to open-source projects where I can improve backend behavior, devel
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
 
----
-
-## Core Skills
-
-### Backend and distributed systems
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=go,nodejs,nestjs,express,php,laravel,java,spring,python&theme=dark&perline=9" alt="Backend skills" />
-</p>
-
-- APIs, services, queues, retries, background workers, scheduling, and storage-backed processing
-- Redis, PostgreSQL, MySQL, MongoDB, Kafka, RabbitMQ, SQL Server
-- Performance, concurrency, reliability, and production debugging
-
-### VoIP and telecom
-
-<p align="left">
-  <img src="https://img.shields.io/badge/SIP-Protocol-0e75b6?style=for-the-badge" alt="SIP" />
-  <img src="https://img.shields.io/badge/OpenSIPS-Routing-orange?style=for-the-badge" alt="OpenSIPS" />
-  <img src="https://img.shields.io/badge/Asterisk-PBX-red?style=for-the-badge" alt="Asterisk" />
-  <img src="https://img.shields.io/badge/FreeSWITCH-Telephony-blueviolet?style=for-the-badge" alt="FreeSWITCH" />
-  <img src="https://img.shields.io/badge/RTPengine-Media-green?style=for-the-badge" alt="RTPengine" />
-  <img src="https://img.shields.io/badge/SIPp-Load%20Testing-1f6feb?style=for-the-badge" alt="SIPp" />
-  <img src="https://img.shields.io/badge/Wireshark-Packet%20Analysis-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
-</p>
-
-- SIP servers, call routing, RTP handling, telecom dashboards, and call monitoring
-- SIPp testing, OpenSIPS workflows, Asterisk/FreeSWITCH integrations, and packet analysis
-
-### Frontend, DevOps, and tools
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,tailwind,linux,docker,nginx,git,github,bash&theme=dark&perline=11" alt="Frontend DevOps and tools" />
-</p>
-
-- React/Next.js interfaces for operational tools and internal platforms
-- Linux, Docker, Nginx, CI/CD, deployment, and service operations
+</details>
 
 ---
 
-## What I Like To Build
+<div align="center">
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3>Telecom Infrastructure</h3>
-      <p>SIP tooling, call monitoring, routing workflows, RTP-aware services, and telecom operations dashboards.</p>
-    </td>
-    <td width="50%">
-      <h3>Backend Platforms</h3>
-      <p>APIs, workers, queues, retries, schedulers, storage adapters, and services designed for production use.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>Open Source Contributions</h3>
-      <p>Focused fixes and proposals in systems where reliability, API design, and maintainability matter.</p>
-    </td>
-    <td width="50%">
-      <h3>Full-Stack Products</h3>
-      <p>Practical business tools where frontend, backend, database, deployment, and monitoring need to work together.</p>
-    </td>
-  </tr>
-</table>
+### Let's connect
 
----
+Interested in **distributed systems, telecom infrastructure, open source, or building reliable software**?
 
-## Contact
+<a href="https://www.linkedin.com/in/mohammad-bagher-amini-aa258b423/"><b>LinkedIn</b></a> &nbsp;·&nbsp; <a href="mailto:darwvin@hotmail.com"><b>Email</b></a> &nbsp;·&nbsp; <a href="https://github.com/darwvin-dev?tab=repositories"><b>Repositories</b></a>
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/mohammad-bagher-amini-a75a88388/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:darwvin@hotmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-darwvin%40hotmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
+<sub>Less hype. Better systems.</sub>
 
----
-
-<p align="center">
-  <b>Building reliable backend systems and telecom tools that survive real production traffic.</b>
-</p>
+</div>
