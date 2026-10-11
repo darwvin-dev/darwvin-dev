@@ -101,11 +101,11 @@ I care about contributions that can be reviewed, tested, and used by the wider e
 
 ### Recent Open Source PRs
 
-- [[tls_mgm] Add TLS handshake outcome and latency statistics](https://github.com/OpenSIPS/opensips/pull/4309) — `closed`
-- [[opentelemetry] Add optional SIP call correlation across messages](https://github.com/OpenSIPS/opensips/pull/4308) — `open`
-- [[sip_overload] Add RFC 7339/7415 SIP overload control](https://github.com/OpenSIPS/opensips/pull/4307) — `open`
-- [[secrets] Add env, file, Vault and Kubernetes secret providers](https://github.com/OpenSIPS/opensips/pull/4306) — `open`
-- [[media_security] Add ICE/TURN and DTLS-SRTP SDP policy enforcement](https://github.com/OpenSIPS/opensips/pull/4305) — `open`
+- [media: show RTPengine sessions via the NG control protocol](https://github.com/irontec/sngrep/pull/581) — `open`
+- [ui: Media Inspector screen (F6)](https://github.com/irontec/sngrep/pull/580) — `open`
+- [media: SIP-free RTP stream inspection (--media-only)](https://github.com/irontec/sngrep/pull/579) — `open`
+- [ui: mouse support in every panel](https://github.com/irontec/sngrep/pull/578) — `open`
+- [feat(media): show RTPengine sessions via the NG control protocol](https://github.com/darwvin-dev/sngrep/pull/4) — `open`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
