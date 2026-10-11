@@ -93,19 +93,11 @@ I care about contributions that can be reviewed, tested, and used by the wider e
 <!-- CONTRIBUTIONS:START -->
 ### SIPp Contributions
 
-- [tools: add DTLS-SRTP diagnostic handshake probe](https://github.com/SIPp/sipp/pull/1281) — `merged`
-- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/SIPp/sipp/pull/1280) — `merged`
-- [tools: add RTCP/SRTCP QoS analysis and MOS estimation](https://github.com/SIPp/sipp/pull/1279) — `merged`
-- [tools: add RTP/RTCP media impairment proxy](https://github.com/SIPp/sipp/pull/1278) — `merged`
-- [tools: add CI-native threshold reports and machine-readable results](https://github.com/SIPp/sipp/pull/1277) — `merged`
+- No public SIPp PRs found yet.
 
 ### Recent Open Source PRs
 
-- [media: show RTPengine sessions via the NG control protocol](https://github.com/irontec/sngrep/pull/581) — `open`
-- [ui: Media Inspector screen (F6)](https://github.com/irontec/sngrep/pull/580) — `open`
-- [media: SIP-free RTP stream inspection (--media-only)](https://github.com/irontec/sngrep/pull/579) — `open`
-- [ui: mouse support in every panel](https://github.com/irontec/sngrep/pull/578) — `open`
-- [feat(media): show RTPengine sessions via the NG control protocol](https://github.com/darwvin-dev/sngrep/pull/4) — `open`
+- No public open-source PRs found yet.
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
