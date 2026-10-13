@@ -93,11 +93,19 @@ I care about contributions that can be reviewed, tested, and used by the wider e
 <!-- CONTRIBUTIONS:START -->
 ### SIPp Contributions
 
-- No public SIPp PRs found yet.
+- [tools: add DTLS-SRTP diagnostic handshake probe](https://github.com/SIPp/sipp/pull/1281) — `merged`
+- [tools: add ICE connectivity, STUN and TURN probes](https://github.com/SIPp/sipp/pull/1280) — `merged`
+- [tools: add RTCP/SRTCP QoS analysis and MOS estimation](https://github.com/SIPp/sipp/pull/1279) — `merged`
+- [tools: add RTP/RTCP media impairment proxy](https://github.com/SIPp/sipp/pull/1278) — `merged`
+- [tools: add CI-native threshold reports and machine-readable results](https://github.com/SIPp/sipp/pull/1277) — `merged`
 
 ### Recent Open Source PRs
 
-- No public open-source PRs found yet.
+- [docs(darwphone): publish privacy policy effective 2026-10-05](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/6) — `open`
+- [test: introduce SIPp CANCEL/487 and late-200 transaction race scenarios](https://github.com/darwvin-dev/opensips/pull/20) — `open`
+- [test: add offline charging lifecycle and idempotency audit](https://github.com/darwvin-dev/opensips/pull/19) — `open`
+- [prometheus: expose pre-aggregated histogram bucket/sum/count series](https://github.com/darwvin-dev/opensips/pull/18) — `open`
+- [drouting: show rule ID, priority and gateway eligibility in number_routing](https://github.com/darwvin-dev/opensips/pull/17) — `open`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
