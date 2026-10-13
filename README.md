@@ -101,11 +101,11 @@ I care about contributions that can be reviewed, tested, and used by the wider e
 
 ### Recent Open Source PRs
 
-- [docs(darwphone): publish privacy policy effective 2026-10-05](https://github.com/darwvin-dev/screenshot-organizer-legal/pull/6) — `open`
-- [test: introduce SIPp CANCEL/487 and late-200 transaction race scenarios](https://github.com/darwvin-dev/opensips/pull/20) — `open`
-- [test: add offline charging lifecycle and idempotency audit](https://github.com/darwvin-dev/opensips/pull/19) — `open`
-- [prometheus: expose pre-aggregated histogram bucket/sum/count series](https://github.com/darwvin-dev/opensips/pull/18) — `open`
-- [drouting: show rule ID, priority and gateway eligibility in number_routing](https://github.com/darwvin-dev/opensips/pull/17) — `open`
+- [ice: avoid forced ICE in answers to non-ICE offers (#2161)](https://github.com/sipwise/rtpengine/pull/2207) — `open`
+- [websocket: prevent HTTP disconnect deadlock by deferring writable callbacks (#2197)](https://github.com/sipwise/rtpengine/pull/2206) — `open`
+- [kernel-module: guard put_net for partially initialized target outputs (#2190)](https://github.com/sipwise/rtpengine/pull/2205) — `open`
+- [redis: preserve owner key when foreign restore fails (#2181)](https://github.com/sipwise/rtpengine/pull/2204) — `open`
+- [rtcp: bound per-SSRC MOS history without losing lifetime aggregates (#2174)](https://github.com/sipwise/rtpengine/pull/2203) — `open`
 
 <sub>Last updated automatically by GitHub Actions.</sub>
 <!-- CONTRIBUTIONS:END -->
