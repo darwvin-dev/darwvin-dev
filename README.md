@@ -103,7 +103,7 @@ I care about contributions that can be reviewed, tested, and used by the wider e
 
 - [ice: avoid forced ICE in answers to non-ICE offers (#2161)](https://github.com/sipwise/rtpengine/pull/2207) — `open`
 - [websocket: prevent HTTP disconnect deadlock by deferring writable callbacks (#2197)](https://github.com/sipwise/rtpengine/pull/2206) — `open`
-- [kernel-module: guard put_net for partially initialized target outputs (#2190)](https://github.com/sipwise/rtpengine/pull/2205) — `open`
+- [kernel-module: guard put_net for partially initialized target outputs (#2190)](https://github.com/sipwise/rtpengine/pull/2205) — `closed`
 - [redis: preserve owner key when foreign restore fails (#2181)](https://github.com/sipwise/rtpengine/pull/2204) — `open`
 - [rtcp: bound per-SSRC MOS history without losing lifetime aggregates (#2174)](https://github.com/sipwise/rtpengine/pull/2203) — `closed`
 
