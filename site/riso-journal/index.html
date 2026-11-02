@@ -16,12 +16,17 @@
 <body>
   <main>
     <h1>Riso Journal Privacy Policy</h1>
-    <p class="meta">Developer: darwvin-dev · Last updated: 2026-09-14</p>
+    <p class="meta">Developer: darwvin-dev · Last updated: 2026-11-02</p>
 
-    <p>Riso Journal is an offline-first Android home-screen personalization and journaling app.</p>
+    <p>Riso Journal is an offline-first Android home-screen personalization and journaling app. Your journal stays on your phone. Riso Circle, an optional social space inside the app, is the only part that uses the Internet, and only if you join it.</p>
 
     <h2>Data collection and sharing</h2>
-    <p>The release build does not request Internet access, create an account, use advertising, remote analytics, or remote crash reporting. It does not transmit tasks, notes, theme choices, launcher information, icon setup routes, or usage data to a server.</p>
+    <p>Riso Journal does not use advertising, remote analytics, or remote crash reporting. It never transmits your journal pages, tasks, notes, printed pages, mood ratings you don't post, focus history, launcher information, icon setup routes, or usage data to a server.</p>
+
+    <h2>Riso Circle (optional)</h2>
+    <p>Riso Circle lets you post one line a day, share a home-screen look, and follow other people. It is off until you join. Joining uses Google sign-in through Android's Credential Manager; Riso receives a Google ID token, and the Circle server keeps only your Google account's stable identifier (not your email address, contacts, or anything else from your Google account).</p>
+    <p>When you join, the Circle server (operated by darwvin at circle.darwvin.com) stores: your handle, optional display name and short bio; the posts and setups you choose to share (a line of text, a mood, and a look's world, Studio preset and icon style, never a screenshot); likes, follows, mutes and blocks; reports you make; an invite code and who invited you; and the level, ink score, streak, badge count and number of printed pages shown on your public profile. Other Circle members can see your handle, name, bio, posts, setups, level, ink, streak, badge count and follower count.</p>
+    <p>Circle data is sent over HTTPS, is not sold, and is not shared with third parties or used for advertising. Reports are reviewed by the developer, who may hide posts or suspend accounts that break the Circle rules.</p>
 
     <h2>Local data</h2>
     <p>Riso stores the selected palette and wallpaper composition, three task strings and completion state, one short note, printed Daily Print pages with an optional mood rating and highlight, and setup state in app-local storage. Release builds do not record the tester counters used by debuggable development builds.</p>
@@ -29,25 +34,32 @@
     <h2>Permissions and launcher visibility</h2>
     <p>Riso does not request broad <code>QUERY_ALL_PACKAGES</code> access or sensitive contacts, location, microphone, camera, media, SMS, or call-log permissions.</p>
     <p>The normal Android <code>SET_WALLPAPER</code> permission is used only when the user explicitly requests wallpaper setup. The app identifies the current HOME launcher and declares a small allowlist of known launcher/OEM setup packages solely to choose the correct widget/icon setup route.</p>
+    <p>The <code>INTERNET</code> permission is used only by Riso Circle. Notifications (<code>POST_NOTIFICATIONS</code>) are used for the optional nightly reminder and the Focus 25 timer. Quick Settings tiles act only on your own journal and Focus session.</p>
+    <p>The Riso Dock widget and Icon Browser read the names of apps you can launch, on the phone only. The Dock also checks which apps are your phone's default dialer, messages, camera, maps, mail, browser and settings, only to pick each app's icon. None of this leaves the phone.</p>
 
     <h2>Wallpaper behavior</h2>
     <p><strong>Quick Setup</strong> renders the selected wallpaper locally and passes it to Android's WallpaperManager for the home screen.</p>
     <p><strong>Preview &amp; Apply</strong> renders a temporary PNG in app cache and grants Android's wallpaper UI temporary read access only to that file through a private FileProvider path.</p>
     <p>No generated wallpaper or user content is uploaded by Riso Journal.</p>
     <p>Exported Daily Print images and monthly PDF collections are saved in app-private storage and leave the device only when you choose a destination in Android's share sheet.</p>
-    <p>Riso Premium is purchased through Google Play, which processes the payment. Riso stores on your device only whether Premium is unlocked, the purchase time and a one-way hash of the purchase token, and sends no purchase data anywhere.</p>
+
+    <h2>Riso Premium</h2>
+    <p>Riso Premium is purchased through Google Play, which processes the payment. Riso stores on your device only whether Premium is unlocked, the purchase time, a one-way hash of the purchase token and the date a free trial began, and sends no purchase data anywhere.</p>
 
     <h2>Widgets and icon setup</h2>
     <p>Riso can request its own App Widgets and can open supported launcher/OEM customization routes for its bundled icon pack. These setup actions do not give Riso access to other apps' private data.</p>
 
     <h2>Backups</h2>
-    <p>Android app backup is disabled. Explicit rules exclude app files, databases, and preferences from cloud backup and device-to-device transfer.</p>
+    <p>Android app backup is disabled. Explicit rules exclude app files, databases, and preferences from cloud backup and device-to-device transfer. You can save a backup file of your journal to a location you pick, and restore from one. Riso never sends it anywhere. You can protect it with a password; without one, anyone with the file can read it, and a forgotten password can't be recovered.</p>
+
+    <h2>Reminder and app lock</h2>
+    <p>The optional nightly reminder is a local notification, and needs Android's notification permission once you turn it on. The optional app lock uses Android's biometric prompt; Riso never receives fingerprint or face data.</p>
 
     <h2>Retention and deletion</h2>
     <p>Local Riso content remains until changed, reset, cleared in Android settings, or the app is uninstalled. Preview PNGs live in cache. Resetting Riso settings does not remove a wallpaper already applied by Android.</p>
 
-    <h2>Accounts</h2>
-    <p>Riso Journal has no account system and therefore no remote account data to delete.</p>
+    <h2>Accounts and deletion</h2>
+    <p>Only Riso Circle has accounts, and they are separate from any darwvin.com account. To delete yours, open Riso Journal → Profile → <strong>Leave Riso Circle</strong>: your account, posts, setups, likes, follows and sessions are deleted from the server immediately. If you no longer have the app, request deletion through the contact below with your Circle handle. Your journal on the phone is never affected.</p>
 
     <h2>Contact</h2>
     <p>Developer: <a href="https://github.com/darwvin-dev">darwvin-dev</a>.</p>
