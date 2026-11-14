@@ -1,6 +1,6 @@
 # Riso Journal Privacy Policy
 
-Developer: **darwvin-dev** · App: `dev.darwvin.risojournal` · Last updated: November 2, 2026
+Developer: **darwvin-dev** · App: `dev.darwvin.risojournal` · Last updated: November 14, 2026
 
 Riso Journal is an offline-first Android home-screen personalization and journaling app. Your journal stays on your phone. Riso Circle, an optional social space inside the app, is the only part that uses the Internet, and only if you join it.
 
@@ -55,6 +55,20 @@ Android app backup is disabled. Explicit rules exclude app files, databases, and
 ## Reminder and app lock
 
 The optional nightly reminder is a local notification, and needs Android's notification permission once you turn it on. The optional app lock uses Android's biometric prompt; Riso never receives fingerprint or face data.
+
+## Riso Home (optional)
+
+Riso Home is an optional home screen. It reads the list of apps on your phone through Android's launcher APIs to draw them; the list stays on your phone. Your home layout (home apps, dock, folders, hidden apps, names you give apps, widgets and settings) and a count of how often you open each app from Riso Home, used only to list your most-used apps first, are kept in app-local storage and never leave the phone. A backup file you save carries the layout and settings, not the counts, so you can restore it on another phone.
+
+Searching the web or Google Play from Riso Home's app list hands the words you typed to your browser, search app or the Play Store, only when you tap that button or press Go with no matching app.
+
+If you allow notification access, Riso Home reads notifications on the phone to show dots on app icons, its own notification center and notification icons on the Always-on screen. Notifications are never stored, logged or sent anywhere, and turning the access off in Android settings stops this at once.
+
+Always-on, an optional part of Riso Home, shows the time, date, battery level, your next alarm and, with notification access, the title of what is playing on a dim screen over the lock screen. Notification icons there leave out notifications your phone keeps off the lock screen. Its “Three things” design also shows today's three tasks there, for anyone who can see the phone; it is shown only if you pick it.
+
+If you turn on “Keep Always-on running”, Riso keeps a small standing notification so your phone does not stop it in the background. That service does nothing else and collects or sends nothing.
+
+Riso gestures, an optional part of Riso Home, use Android's accessibility service only to notice swipes on thin strips at the screen edges and go back, home or to recent apps, and to lock the phone when you double-tap an empty spot of Riso Home. They receive no accessibility events and no screen content, see nothing you type, and store or send nothing.
 
 ## Retention and deletion
 
