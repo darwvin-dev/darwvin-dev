@@ -1,6 +1,6 @@
 # Riso Journal Privacy Policy
 
-Developer: **darwvin-dev** · App: `dev.darwvin.risojournal` · Last updated: November 14, 2026
+Developer: **darwvin-dev** · App: `dev.darwvin.risojournal` · Last updated: November 19, 2026
 
 Riso Journal is an offline-first Android home-screen personalization and journaling app. Your journal stays on your phone. Riso Circle, an optional social space inside the app, is the only part that uses the Internet, and only if you join it.
 
@@ -76,9 +76,11 @@ Local Riso content remains until changed, reset, cleared in Android settings, or
 
 ## Accounts and deletion
 
-Only Riso Circle has accounts, and they are separate from any darwvin.com account. To delete yours, open Riso Journal → Profile → **Leave Riso Circle**: your account, posts, setups, likes, follows and sessions are deleted from the server immediately. If you no longer have the app, request deletion through the contact below with your Circle handle. Your journal on the phone is never affected.
+Only Riso Circle has accounts, and they are separate from any darwvin.com account. To delete yours, open Riso Journal → Profile → **Leave Riso Circle**: your account, posts, setups, likes, follows and sessions are deleted from the server immediately. If you no longer have the app, email support@darwvin.com with your Circle handle, as described at [darwvin.com/riso-journal/circle](https://darwvin.com/riso-journal/circle); we delete it within 30 days. You must be 16 or older to join Riso Circle. Your journal on the phone is never affected.
 
 ## Contact
+
+Riso Circle questions, appeals and deletion requests: support@darwvin.com.
 
 Developer: [darwvin-dev](https://github.com/darwvin-dev).
 
